@@ -2,7 +2,7 @@ import java.util.ArrayList;
 // Bag object to create and hold specific number of alphabet and blank tiles.
 public class Bag {
     private ArrayList<Tile> tiles;
-    public bag() {
+    public Bag() {
         tiles = new ArrayList<>();
 
     }
