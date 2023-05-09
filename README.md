@@ -17,7 +17,10 @@ X will refer to which row and Y will refer to which column.
 <br>While connecting the cell with its neighbors, if the formula outputs an X or Y less than 0 or greater than 14 that
 neighboring cell will be set to null.
 ### Scrabble Tile
-
+The tiles class will only hold the characters and corresponding points.
+<br>Characters are used to check if tiles played form a valid word,
+and points will be added from all tiles played forming the new word in addition to any newer
+words completed with the initial word play.
 ### Scrabble Bag
 0 points: Blank x2
 <br>1 point: E x12, A x9, I x9, O x8, N x6 , R x6, T x6, L x4, S x4, U x4
