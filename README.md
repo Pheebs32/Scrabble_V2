@@ -2,7 +2,8 @@
 
 ---
 This is my second attempt at a Scrabble game project in Java.
-<br>I believe my first attempt was too much all at once for such a new language, and so I am restarting with a simpler approach.
+<br>I believe my first attempt was too much all at once for such a new language, 
+and so I am restarting with a simpler approach.
 #### Motivation
 I am making a Scrabble Board game in each language I know to show progression through the language.
 <br>This will continue as I learn new languages as well - hopefully.
@@ -48,3 +49,7 @@ The engine class will mostly contain data structures and algorithms to verify us
 Searches through 'file' to check if valid.
 ### Trie/ Sort
 Insert and search methods.
+<br><br>So far I am making a Scrabble board game in the languages:
+- Python
+- Java
+- C#
