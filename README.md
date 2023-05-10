@@ -12,7 +12,7 @@ The board will be made up of a 15 X 15 array of Cell objects.
 <br> It will show bonuses that the cells have (eg, starting centre, double letter/ word and triple letter/ word)
 <br> It will connect all the tiles to one another by their own pointers.
 ### Scrabble cells
-X will refer to which row and Y will refer to which column.
+'X' will refer to which row and 'Y' will refer to which column.
 <br>The 'current' cell will be able to access all of it's neighboring cells when initializing the board.
 <br>Each cell with have a left, right ,top and bottom pointer.
 <br>While connecting the cell with its neighbors, if the formula outputs an X or Y less than 0 or greater than 14 that

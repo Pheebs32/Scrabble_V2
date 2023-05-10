@@ -14,7 +14,7 @@
 <br>... set top, bottom, left and right
 ## **Main**
 ... public static void main
-<br>... must initialize all contents 
+<br>... must initialize all contents:
 <br>...... create window
 <br>...... create board panel
 <br>...... create player panel

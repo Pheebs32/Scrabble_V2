@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 // Bag object to create and hold specific number of alphabet and blank tiles.
 public class Bag {
     private ArrayList<Tile> tiles;
