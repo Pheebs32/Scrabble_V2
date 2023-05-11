@@ -19,36 +19,82 @@ public class Player {
 
     // pushes tiles in rack to left side, leaving no spaces in between tiles.
     public void organizeRack() {
-
+        for (int i = 0; i< 6; i++) {
+            if (rack[i] == null) {
+                for (int j = i + 1; j < 7; j++) {
+                    rack[i] = rack[j];
+                    rack[j] = null;
+                    break;
+                }
+            }
+        }
     }
 
     public Tile getFromRackAt(int index) {
-        return i;
+        return rack[index];
     }
 
     public Tile getAndRemoveFromRackAt(int index) {
-        return i;
+        Tile temp = rack[index];
+        rack[index] = null;
+        return temp;
     }
 
     // adds tile to next free index in rack array the returns which index, -1 if no free index to insert tile
-    public Tile addTileToRack(int index) {
-        return i;
+    public int addTileToRack(Tile tile) {
+        for (int i = 0; i < rack.length; i++) {
+            if (rack[i] == null) {
+                rack[i] = tile;
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    // helper function for undo button
+    public void addTileToRackAt(Tile tile, int index) {
+        if (rack[index] == null) {
+            rack[index] = tile;
+        }
     }
 
     public void addTileToPending(Tile tile) {
-
+        for (int i = 0; i < pendingRack.length; i++) {
+            if (pendingRack[i] == null) {
+                pendingRack[i] = tile;
+                return;
+            }
+        }
     }
 
     public boolean rackIsFull() {
-        return false;
+        int count = 0;
+        for (int i = 0; i < rack.length; i++) {
+            if (rack[i] != null) {
+                count++;
+            }
+        }
+        return count == 7;
     }
 
     public int getRackSize() {
-        return 1;
+        int count = 0;
+        for (int i = 0; i < rack.length; i++) {
+            if (rack[i] != null) {
+                count++;
+            }
+        }
+        return count;
     }
 
     public int getPendingRackSize() {
-        return 1;
+        int count = 0;
+        for (int i = 0; i < pendingRack.length; i++) {
+            if (pendingRack[i] != null) {
+                count++;
+            }
+        }
+        return count;
     }
 
     public Tile[] getRack() {

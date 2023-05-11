@@ -9,15 +9,15 @@ public class Cell {
     }
 
     public void setTile(Tile tile) {
-
+        this.tile = tile;
     }
 
     public Tile getTile() {
         return this.tile;
     }
 
-    public void setBonus() {
-
+    public void setBonus(String bonus) {
+        this.bonus = bonus;
     }
 
     public String getBonus() {
@@ -33,7 +33,7 @@ public class Cell {
     }
 
     public void setBottom(Cell cell){
-        this.top = cell;
+        this.bottom = cell;
     }
 
     public Cell getBottom() {
@@ -41,7 +41,7 @@ public class Cell {
     }
 
     public void setLeft(Cell cell){
-        this.top = cell;
+        this.left = cell;
     }
 
     public Cell getLeft() {
@@ -49,7 +49,7 @@ public class Cell {
     }
 
     public void setRight(Cell cell){
-        this.top = cell;
+        this.right = cell;
     }
 
     public Cell getRight() {
