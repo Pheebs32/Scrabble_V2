@@ -2,13 +2,23 @@ import java.util.*;
 
 public class Player {
     private Tile[] rack; // tiles that can be played from the rack
-    private Tile[] pendingRack; // to keep up with the tiles that they have placed down on the board and have not played.
     private int score;
 
     public Player() {
         rack = new Tile[7];
-        pendingRack = new Tile[7];
         score = 0;
+    }
+
+    public String getScore() {
+        return String.valueOf(score);
+    }
+
+    public void setScore(int num) {
+        score = num;
+    }
+
+    public void addScore(int num) {
+        score = score + num;
     }
 
     public void shuffleRack() {
@@ -55,15 +65,6 @@ public class Player {
     public void addTileToRackAt(Tile tile, int index) {
         if (rack[index] == null) {
             rack[index] = tile;
-        }
-    }
-
-    public void addTileToPending(Tile tile) {
-        for (int i = 0; i < pendingRack.length; i++) {
-            if (pendingRack[i] == null) {
-                pendingRack[i] = tile;
-                return;
-            }
         }
     }
 
