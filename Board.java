@@ -33,12 +33,71 @@ public class Board {
         // starting center
         cellMatrix[7][7].setBonus("X");
         // triple word
-
+        cellMatrix[0][0].setBonus("TW");
+        cellMatrix[7][0].setBonus("TW");
+        cellMatrix[14][0].setBonus("TW");
+        cellMatrix[0][7].setBonus("TW");
+        cellMatrix[0][14].setBonus("TW");
+        cellMatrix[7][14].setBonus("TW");
+        cellMatrix[14][7].setBonus("TW");
+        cellMatrix[14][14].setBonus("TW");
         // triple letter
-
+        cellMatrix[5][1].setBonus("TL");
+        cellMatrix[1][9].setBonus("TL");
+        cellMatrix[1][5].setBonus("TL");
+        cellMatrix[5][5].setBonus("TL");
+        cellMatrix[9][5].setBonus("TL");
+        cellMatrix[13][5].setBonus("TL");
+        cellMatrix[1][9].setBonus("TL");
+        cellMatrix[5][9].setBonus("TL");
+        cellMatrix[9][9].setBonus("TL");
+        cellMatrix[13][9].setBonus("TL");
+        cellMatrix[5][13].setBonus("TL");
+        cellMatrix[9][13].setBonus("TL");
         // double word
-
+        cellMatrix[1][1].setBonus("DW");
+        cellMatrix[2][2].setBonus("DW");
+        cellMatrix[3][3].setBonus("DW");
+        cellMatrix[4][4].setBonus("DW");
+        cellMatrix[4][10].setBonus("DW");
+        cellMatrix[3][11].setBonus("DW");
+        cellMatrix[2][12].setBonus("DW");
+        cellMatrix[1][13].setBonus("DW");
+        cellMatrix[13][1].setBonus("DW");
+        cellMatrix[12][2].setBonus("DW");
+        cellMatrix[11][3].setBonus("DW");
+        cellMatrix[10][4].setBonus("DW");
+        cellMatrix[10][10].setBonus("DW");
+        cellMatrix[11][11].setBonus("DW");
+        cellMatrix[12][12].setBonus("DW");
+        cellMatrix[13][13].setBonus("DW");
         // double letter
+        cellMatrix[3][0].setBonus("DL");
+        cellMatrix[11][0].setBonus("DL");
+        cellMatrix[0][3].setBonus("DL");
+        cellMatrix[6][2].setBonus("DL");
+        cellMatrix[7][3].setBonus("DL");
+        cellMatrix[8][2].setBonus("DL");
+        cellMatrix[14][3].setBonus("DL");
+        cellMatrix[2][6].setBonus("DL");
+        cellMatrix[6][6].setBonus("DL");
+        cellMatrix[8][6].setBonus("DL");
+        cellMatrix[12][6].setBonus("DL");
+        cellMatrix[3][7].setBonus("DL");
+        cellMatrix[11][7].setBonus("DL");
+        cellMatrix[2][8].setBonus("DL");
+        cellMatrix[6][8].setBonus("DL");
+        cellMatrix[8][8].setBonus("DL");
+        cellMatrix[12][8].setBonus("DL");
+        cellMatrix[0][11].setBonus("DL");
+        cellMatrix[7][11].setBonus("DL");
+        cellMatrix[14][11].setBonus("DL");
+        cellMatrix[6][12].setBonus("DL");
+        cellMatrix[8][12].setBonus("DL");
+        cellMatrix[3][14].setBonus("DL");
+        cellMatrix[6][12].setBonus("DL");
+        cellMatrix[11][14].setBonus("DL");
+
     }
 
     public void connectTop(int row, int col, Cell[][] cellMatrix) {
