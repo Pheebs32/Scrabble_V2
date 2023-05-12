@@ -353,7 +353,7 @@ public class Main {
     // Add a tile from bag to player's rack if possible
     private void givePlayerANewTile() {
         // cannot add tiles to player's rack if bag is empty or rack is full (rack has more than 7 elements)
-        if (bag.bagIsEmpty() || (player.getRackSize() + player.getPendingRackSize()) > 7) {
+        if (bag.bagIsEmpty() || (player.getRackSize() > 7)) {
             return;
         }
 

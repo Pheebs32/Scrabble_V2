@@ -88,16 +88,6 @@ public class Player {
         return count;
     }
 
-    public int getPendingRackSize() {
-        int count = 0;
-        for (int i = 0; i < pendingRack.length; i++) {
-            if (pendingRack[i] != null) {
-                count++;
-            }
-        }
-        return count;
-    }
-
     public Tile[] getRack() {
         return this.rack;
     }
