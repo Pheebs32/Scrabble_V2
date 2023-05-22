@@ -42,7 +42,15 @@ The players button 'undo' will undo their tile placement on the board and bring 
 <br>Finally, the button 'submit' will check the players tile placement on the board if it does make a word. If a legit word is played, then the score is updated. 
 If not, nothing will happen and the score will remain the same.
 ### Main/GUI
-The GUI (main) class deals with initializing all GUI panels, button ect.
+The GUI (main) class deals with initialising all GUI panels, button ect. 
+<br>After, it initialises  the classes needed to run the game (e.g. Bag, Board, Cell, Player, Tile, Engine).
+For example, the 15 X 15 cell array locate from the board object represents the scrabble board. Then, it connects these objects to the GUI,
+so when you press a button, an action is performed on the application and the object variables change.
+When the player clicks on the tile button in their rack panel, a variable 'tileSelected' in the engine object copies
+the chosen element from the players object's rack array. After the player chooses a tile from their rack,
+they may press any button on the scrabble board to transfer the 'tileSelected' tile variable for the cell object located
+in the 15 X 15 cell matrix to hold as its own tile variable 'Tile'.
+<br>This is only one action that the player may perform.
 ### Engine
 The engine class will mostly contain data structures and algorithms to verify user moves along with player, computer and board objects to update scores/data.
 ### Dictionary
